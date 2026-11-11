@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap');
+
+:root { --navy: #102a43; --blue: #1677a8; --sky: #eaf5fa; --orange: #ffbd59; }
+* { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; color: #243746; }
+h1, h2, h3, .navbar-brand { font-family: 'Montserrat', sans-serif; }
+.travel-nav { background: var(--navy); }
+.navbar-brand i { color: var(--orange); }
+.nav-link { margin-left: .7rem; }
+.travel-hero {
+  min-height: 640px;
+  background: linear-gradient(rgba(7, 28, 48, .52), rgba(7, 28, 48, .58)),
+    url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1800&q=90') center/cover;
+}
+.hero-kicker, .eyebrow { color: var(--orange); font-size: .78rem; font-weight: 700; letter-spacing: .17em; }
+.travel-hero h1 { max-width: 850px; margin: 0 auto; }
+.btn-explore { background: var(--orange); border: 1px solid var(--orange); color: #17324a; font-weight: 700; padding: .75rem 1.5rem; }
+.btn-explore:hover { background: #f0a936; border-color: #f0a936; color: #102a43; }
+.section-pad { padding: 5rem 0; }
+.section-title { color: var(--navy); font-size: clamp(2rem, 4vw, 2.7rem); }
+.destination-card { border: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 25px rgba(16,42,67,.1); transition: transform .2s ease; }
+.destination-card:hover { transform: translateY(-5px); }
+.destination-card img { height: 230px; object-fit: cover; }
+.destination-card .card-body { padding: 1.4rem; }
+.btn-outline-primary { color: var(--blue); border-color: var(--blue); }
+.btn-outline-primary:hover { background: var(--blue); border-color: var(--blue); }
+.tours-section { background: var(--sky); }
+.accordion { --bs-accordion-border-radius: 12px; --bs-accordion-btn-focus-box-shadow: 0 0 0 .2rem rgba(22,119,168,.15); }
+.accordion-item { border: 0; margin-bottom: .8rem; border-radius: 12px !important; overflow: hidden; }
+.accordion-button { font-weight: 700; color: var(--navy); padding: 1.2rem 1.3rem; }
+.accordion-button:not(.collapsed) { background: #d8edf7; color: var(--navy); }
+.travel-form { background: var(--sky); padding: 2rem; border-radius: 16px; }
+.form-control, .form-select { padding: .8rem; }
+.travel-footer { background: var(--navy); color: #fff; padding: 2rem 0; }
+.social-links { display: flex; justify-content: center; gap: 1.2rem; }
+.social-links a { color: #fff; font-size: 1.25rem; }
+.social-links a:hover { color: var(--orange); }
+@media (max-width: 576px) {
+  .travel-hero { min-height: 540px; }
+  .section-pad { padding: 3.5rem 0; }
+  .travel-form { padding: 1.25rem; }
+}
